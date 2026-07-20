@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Preppy</title>
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<main>
+
+<h1>Preppy — Privacy Policy</h1>
+<p class="subtitle">Last updated 20 July 2026 · Little Bird Solutions</p>
+
+<div class="summary">
+  <p><strong>The short version.</strong> Preppy has no accounts and no servers of ours. Your
+  profile, your interview answers and your feedback are stored only on your own device.</p>
+  <p>To generate questions and feedback, Preppy sends your answers directly from your device
+  to OpenAI, using an OpenAI API key that <em>you</em> provide. We never see that traffic and
+  we never receive your answers.</p>
+  <p>On Android we collect anonymous usage and crash statistics. These contain no interview
+  content and no identifier that points back to you. The iOS app collects nothing at all.</p>
+</div>
+
+<h2>1. Who we are</h2>
+<p>Preppy is published by <strong>Little Bird Solutions</strong>, the data controller for the
+limited personal data described below. You can reach us at
+<a href="mailto:contact@littlebirdsolutions.com">contact@littlebirdsolutions.com</a>.</p>
+<p>This policy covers the Preppy mobile app for Android and iOS
+(<code>solutions.littlebird.interviewprep</code>). It does not cover OpenAI's services, which
+are governed by OpenAI's own terms and privacy policy.</p>
+
+<h2>2. There is no Preppy account and no Preppy server</h2>
+<p>Preppy does not ask you to sign up, sign in, or create an account. We do not operate a
+backend that stores your data, and nothing you write in the app is uploaded to us or synced
+between your devices. If you use Preppy on two devices, they share nothing.</p>
+
+<h2>3. What is stored on your device</h2>
+<p>The following is written to a private database inside the app's own storage area, readable
+only by Preppy:</p>
+
+<div class="table-wrap">
+<table>
+  <thead><tr><th>What</th><th>Details</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>Your profile</td>
+      <td>Industry, role, experience level, target companies, and the optional free-text
+      "anything else" note you write during onboarding.</td>
+    </tr>
+    <tr>
+      <td>Interview transcripts</td>
+      <td>Every question the interviewer asked and every answer you gave, verbatim.</td>
+    </tr>
+    <tr>
+      <td>Scorecards</td>
+      <td>Your 1–5 scores for structure, substance and reflection, plus the written
+      strengths, improvements and rationale.</td>
+    </tr>
+    <tr>
+      <td>App settings</td>
+      <td>Whether you have finished onboarding, and your voice preference.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h3>Your API key</h3>
+<p>Your OpenAI API key is stored separately from everything above, in the platform's
+hardware-backed secure storage — the <strong>Android Keystore</strong> (via encrypted
+preferences) on Android, and the <strong>iOS Keychain</strong> on iOS. On iOS it is marked
+as available only when the device is unlocked and is deliberately excluded from iCloud
+Keychain and encrypted backups. On Android, the app disables Android Backup entirely. The
+key leaves your device only as an authorisation header on requests to OpenAI. It is never
+sent to us, and it is never included in analytics or crash reports.</p>
+
+<h2>4. What is sent to OpenAI</h2>
+<p>Preppy is an AI app, and the AI runs on OpenAI's servers, not on your phone. When you use
+the app, your device sends the following <strong>directly to OpenAI</strong>, authenticated
+with your own API key:</p>
+<ul>
+  <li>Your profile — so questions and feedback can be tailored to your industry, role, level
+  and target companies. This includes the free-text "anything else" note.</li>
+  <li>Your answers, as you write them.</li>
+  <li>The full transcript of an interview, at the point it is graded.</li>
+</ul>
+<p>These requests go from your device to OpenAI. They do not pass through any system operated
+by Little Bird Solutions, and we have no ability to read, log or retain them.</p>
+<p>Because you are using your own API key, OpenAI processes this data under
+<strong>your</strong> relationship with them, not ours. How long OpenAI retains it, and what
+they do with it, is set by their policies — see
+<a href="https://openai.com/policies/privacy-policy" rel="noopener">OpenAI's privacy policy</a>
+and their <a href="https://openai.com/policies/api-data-usage-policies" rel="noopener">API data
+usage policies</a>. At the time of writing, OpenAI states that data submitted through the API
+is not used to train their models by default.</p>
+<p><strong>Please treat this as real disclosure of real information.</strong> Interview answers
+often contain details about your employer, your colleagues, projects you have worked on, and
+sometimes commercially sensitive or confidential matters. Anything you type into Preppy will
+be sent to OpenAI. Do not enter information you are not free to share with a third party.</p>
+
+<h2>5. Analytics and crash reporting</h2>
+
+<h3>Android</h3>
+<p>The Android app uses <strong>Google Firebase Analytics</strong> and
+<strong>Firebase Crashlytics</strong> to tell us which parts of the app are used and when it
+breaks. We have designed this deliberately narrowly.</p>
+<p><strong>We record</strong> that named events occurred — for example that onboarding was
+completed, that an interview was started, that a question was scored, or that a turn failed —
+along with fixed values such as which screen you were on, your experience level bracket, the
+AI provider, and the position of a question within an interview.</p>
+<p><strong>We do not record</strong> your questions, your answers, your profile free text, your
+scores, your API key, your name, your email address, or any identifier you have given us. The
+app is built so that free-form text physically cannot be attached to an analytics event. Crash
+reports are stripped of error message text before being sent, leaving only the type of error,
+specifically so that no fragment of an answer or a key can escape that way.</p>
+<p>Firebase does automatically collect some standard technical information of its own,
+independent of the events above: a randomly generated app-instance identifier, your device
+model, operating system version, app version, and a coarse geographic region derived from your
+IP address. This is Google's standard behaviour for the SDK. Google processes this on our
+behalf; see <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase's
+privacy documentation</a>. For operational reasons our Firebase data is collected within a
+Google Cloud project registered to Little Bird Solutions under an unrelated project name; it is
+governed by this policy regardless.</p>
+
+<h3>iOS</h3>
+<p>The iOS app contains <strong>no analytics and no crash reporting</strong>. It sends nothing
+to us or to Google under any circumstances.</p>
+
+<h2>6. What Preppy does not do</h2>
+<ul>
+  <li>No advertising, and no advertising SDKs.</li>
+  <li>No selling or sharing of personal data with anyone, for any purpose.</li>
+  <li>No cross-app or cross-site tracking, and no advertising identifier is read.</li>
+  <li>No location tracking. Preppy never requests location access.</li>
+  <li>No access to your microphone, camera, contacts, photos, or files. The only permission
+  the app requests is internet access.</li>
+</ul>
+
+<h2>7. How long data is kept</h2>
+<p>Data on your device is kept until you delete it. <strong>Settings → Clear history</strong>
+deletes all of your saved interviews, answers and scorecards. Uninstalling the app removes
+everything, including your profile and your stored API key.</p>
+<p>Analytics and crash data are retained by Firebase according to Google's default retention
+periods, after which they are deleted or aggregated.</p>
+
+<h2>8. Your rights</h2>
+<p>If you are in the UK, the EEA, or another region with comparable law, you have rights of
+access, rectification, erasure, restriction, objection and portability over personal data we
+hold about you.</p>
+<p>In practice, almost everything Preppy holds about you is on your own device, under your own
+control — so you can exercise those rights directly and immediately by editing your profile,
+clearing your history, or uninstalling the app. For the anonymous analytics data described in
+section 5, or for any other question about your rights, contact us at
+<a href="mailto:contact@littlebirdsolutions.com">contact@littlebirdsolutions.com</a> and we
+will respond within one month. You also have the right to complain to your local data
+protection authority; in the UK that is the
+<a href="https://ico.org.uk" rel="noopener">Information Commissioner's Office</a>.</p>
+<p>Where we rely on a legal basis for processing, it is our legitimate interest in
+understanding whether the app works and in fixing crashes, balanced against the deliberately
+minimal and non-identifying nature of what we collect.</p>
+
+<h2>9. Children</h2>
+<p>Preppy is intended for adults preparing for job interviews. It is not directed at children,
+and we do not knowingly collect personal data from anyone under 13. If you believe a child has
+provided us with personal data, please contact us.</p>
+
+<h2>10. International transfers</h2>
+<p>Requests you make to OpenAI, and the analytics described above, may be processed on servers
+outside your country, including in the United States. Where personal data is transferred out
+of the UK or EEA, the recipients rely on approved safeguards such as the UK International Data
+Transfer Agreement or the EU Standard Contractual Clauses.</p>
+
+<h2>11. Changes to this policy</h2>
+<p>If we change this policy we will update the date at the top of this page, and — for changes
+that materially affect you — tell you inside the app before they take effect.</p>
+
+<h2>12. Contact</h2>
+<p>Questions, requests or complaints:
+<a href="mailto:contact@littlebirdsolutions.com">contact@littlebirdsolutions.com</a>.</p>
+
+<footer>
+  <p>Little Bird Solutions · <a href="/preppy/support/">Preppy support</a></p>
+</footer>
+
+</main>
+</body>
+</html>
