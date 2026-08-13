@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Privacy Policy — Overshoot</title>
+        <link rel="stylesheet" href="/assets/style.css" />
+    </head>
+    <body>
+        <main>
+            <h1>Overshoot — Privacy Policy</h1>
+            <p class="subtitle">
+                Last updated 13 August 2026 · Little Bird Solutions
+            </p>
+
+            <div class="summary">
+                <p>
+                    <strong>The short version.</strong> Overshoot has no
+                    accounts, no sign-in and no servers of ours. Your best score
+                    and your settings are stored only on your own device.
+                </p>
+                <p>
+                    The game never asks you for a name, an email address or any
+                    other personal detail, and it has no way to accept one —
+                    there is nowhere in it to type.
+                </p>
+                <p>
+                    It does send anonymous gameplay statistics and error reports
+                    to GameAnalytics, so we can see how far people actually get
+                    and what breaks on phones that are not ours. Those carry a
+                    random identifier that exists only inside this game and
+                    points at nothing else about you.
+                </p>
+            </div>
+
+            <h2>1. Who we are</h2>
+            <p>
+                Overshoot is published by
+                <strong>Little Bird Solutions</strong>, the data controller for
+                the limited data described below. You can reach us at
+                <a href="mailto:contact@littlebirdsolutions.com"
+                    >contact@littlebirdsolutions.com</a
+                >.
+            </p>
+            <p>
+                This policy covers the Overshoot game for Android
+                (<code>solutions.littlebird.overshoot</code>). It does not cover
+                GameAnalytics' own services, or Google Play, which are governed
+                by their own policies.
+            </p>
+
+            <h2>2. There is no Overshoot account and no Overshoot server</h2>
+            <p>
+                Overshoot does not ask you to sign up, sign in, or create an
+                account, and it does not connect to any Google Play, Apple or
+                social account. We do not operate a backend. Nothing you do in
+                the game is uploaded to us or synced between your devices — if
+                you install Overshoot on two phones, they share nothing, and
+                your best score does not follow you.
+            </p>
+            <p>
+                The game contains no text input of any kind. There is no name to
+                enter, no leaderboard handle, no chat and no message field, so
+                there is no free text anywhere in it that could be stored or
+                sent.
+            </p>
+
+            <h2>3. What is stored on your device</h2>
+            <p>
+                One small settings file is written inside the app's own private
+                storage area, readable only by Overshoot:
+            </p>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>What</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Your best score</td>
+                            <td>
+                                The highest score any run on this device has
+                                reached.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Your settings</td>
+                            <td>
+                                Whether sound effects, music and vibration are
+                                switched on.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Analytics bookkeeping</td>
+                            <td>
+                                The random install identifier described in
+                                section 4, how many times the game has been
+                                opened on this device, and when the current
+                                session started and was last seen.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>
+                <strong>Settings → Reset progress</strong> erases your best
+                score. It deliberately does not erase your sound
+                and vibration preferences — someone who has muted the game and
+                then clears their score should not be shouted at as a
+                consequence — and it does not erase the install identifier,
+                because wiping that would file the same phone as a brand new
+                player and quietly falsify the only numbers we look at.
+            </p>
+            <p>
+                Uninstalling the game removes all of it, including the install
+                identifier. Overshoot switches off Android's automatic backup, so
+                none of this file is copied to your Google account or restored
+                onto a new phone.
+            </p>
+
+            <h2>4. What is sent to GameAnalytics</h2>
+            <p>
+                Overshoot uses <strong>GameAnalytics</strong> to answer one
+                question we cannot answer any other way: how far up the column
+                people actually get, and therefore how much of the game anyone
+                ever sees. Events are sent from your device directly to
+                GameAnalytics' collection API. They do not pass through any
+                system operated by Little Bird Solutions.
+            </p>
+            <p><strong>Each event carries:</strong></p>
+            <ul>
+                <li>
+                    <strong>A random install identifier</strong> — a version 4
+                    UUID generated on your device the first time you open the
+                    game. It is not derived from anything about you or your
+                    phone, it is not your Google Play account, and it is not the
+                    Android advertising ID. It identifies one installation of one
+                    game and nothing else.
+                </li>
+                <li>
+                    A random session identifier, the number of sessions since
+                    install, and the length of each session.
+                </li>
+                <li>
+                    Your device model, Android version, the game's version
+                    number, and the version of the game engine.
+                </li>
+                <li>The time the event happened.</li>
+            </ul>
+            <p><strong>The events themselves are:</strong></p>
+            <ul>
+                <li>
+                    That a run ended, how high it got, roughly what was going on
+                    where it ended, and the score.
+                </li>
+                <li>
+                    Totals for a session — how many runs you played, and how many
+                    platforms, pickups, blocks, rings and prisms those runs
+                    involved.
+                </li>
+                <li>That a session started and that it ended.</li>
+            </ul>
+            <p>
+                That is the whole list. Overshoot does not use the GameAnalytics
+                SDK — the events above are posted by about three hundred lines of
+                the game's own code, specifically so that no third-party library
+                is in a position to read device or advertising identifiers we
+                have not asked for.
+            </p>
+            <p>
+                GameAnalytics necessarily sees the IP address your device
+                connects from, as any web request does, and derives a coarse
+                country from it. Their handling of the data is set by their own
+                policies — see
+                <a
+                    href="https://gameanalytics.com/privacy"
+                    rel="noopener"
+                    >GameAnalytics' privacy policy</a
+                >. They process this data on our behalf as our processor.
+            </p>
+
+            <h2>5. Error reports</h2>
+            <p>
+                When something goes wrong inside the game — a file that would not
+                load, a shader that would not compile, an internal check that
+                failed — Overshoot sends the engine's own error message and the
+                location in the game's code that raised it, so we can find out
+                how the build behaves on phones we do not own. At most ten such
+                reports are sent per launch.
+            </p>
+            <p>
+                These describe the game's own code and nothing else. Because
+                Overshoot holds no personal data and has nowhere to type, there
+                is no personal information available for an error message to
+                contain.
+            </p>
+
+            <h2>6. What Overshoot does not do</h2>
+            <ul>
+                <li>No advertising, and no advertising SDKs.</li>
+                <li>No in-app purchases and no payment details.</li>
+                <li>
+                    No selling or sharing of personal data with anyone, for any
+                    purpose.
+                </li>
+                <li>
+                    No cross-app or cross-site tracking, and the Android
+                    advertising ID is never read.
+                </li>
+                <li>
+                    No location tracking. Overshoot never requests location
+                    access.
+                </li>
+                <li>
+                    No access to your microphone, camera, contacts, photos or
+                    files. The only permissions the app requests are internet
+                    access and vibration.
+                </li>
+            </ul>
+
+            <h2>7. How long data is kept</h2>
+            <p>
+                Data on your device is kept until you delete it, either through
+                <strong>Settings → Reset progress</strong> or by uninstalling the
+                game.
+            </p>
+            <p>
+                Analytics and error data are retained by GameAnalytics according
+                to their retention periods, after which they are deleted or
+                aggregated.
+            </p>
+
+            <h2>8. Your rights</h2>
+            <p>
+                If you are in the UK, the EEA, or another region with comparable
+                law, you have rights of access, rectification, erasure,
+                restriction, objection and portability over personal data we hold
+                about you.
+            </p>
+            <p>
+                In practice we hold nothing that identifies you. The install
+                identifier is the only handle that exists, it lives on your
+                device, and we have no way to connect it to a person — so if you
+                want to exercise those rights over the analytics described above,
+                contact us at
+                <a href="mailto:contact@littlebirdsolutions.com"
+                    >contact@littlebirdsolutions.com</a
+                >
+                with that identifier and we will respond within one month.
+                Uninstalling the game deletes it, and any future install is
+                counted as a stranger. You also have the right to complain to
+                your local data protection authority; in the UK that is the
+                <a href="https://ico.org.uk" rel="noopener"
+                    >Information Commissioner's Office</a
+                >.
+            </p>
+            <p>
+                Where we rely on a legal basis for processing, it is our
+                legitimate interest in understanding whether the game is worth
+                playing and in fixing what breaks, balanced against the
+                deliberately minimal and non-identifying nature of what we
+                collect.
+            </p>
+
+            <h2>9. Children</h2>
+            <p>
+                Overshoot is a general-audience arcade game. It is not directed
+                at children, and we do not knowingly collect personal data from
+                anyone under 13. It shows no advertising, sells nothing, and
+                collects no personal information from any player regardless of
+                age. If you believe a child has provided us with personal data,
+                please contact us.
+            </p>
+
+            <h2>10. International transfers</h2>
+            <p>
+                The analytics described above may be processed on servers outside
+                your country, including in the European Union and the United
+                States. Where personal data is transferred out of the UK or EEA,
+                the recipients rely on approved safeguards such as the UK
+                International Data Transfer Agreement or the EU Standard
+                Contractual Clauses.
+            </p>
+
+            <h2>11. Changes to this policy</h2>
+            <p>
+                If we change this policy we will update the date at the top of
+                this page, and — for changes that materially affect you — tell
+                you inside the game before they take effect.
+            </p>
+
+            <h2>12. Contact</h2>
+            <p>
+                Questions, requests or complaints:
+                <a href="mailto:contact@littlebirdsolutions.com"
+                    >contact@littlebirdsolutions.com</a
+                >.
+            </p>
+
+            <footer>
+                <p>Little Bird Solutions</p>
+            </footer>
+        </main>
+    </body>
+</html>
