@@ -10,14 +10,15 @@
         <main>
             <h1>Overshoot — Privacy Policy</h1>
             <p class="subtitle">
-                Last updated 13 August 2026 · Little Bird Solutions
+                Last updated 17 August 2026 · Little Bird Solutions
             </p>
 
             <div class="summary">
                 <p>
                     <strong>The short version.</strong> Overshoot has no
                     accounts, no sign-in and no servers of ours. Your best score
-                    and your settings are stored only on your own device.
+                    and your settings are stored only on your own device — and,
+                    on iOS, in your own device backup if you keep one.
                 </p>
                 <p>
                     The game never asks you for a name, an email address or any
@@ -43,17 +44,20 @@
                 >.
             </p>
             <p>
-                This policy covers the Overshoot game for Android
-                (<code>solutions.littlebird.overshoot</code>). It does not cover
-                GameAnalytics' own services, or Google Play, which are governed
-                by their own policies.
+                This policy covers the Overshoot game on both Android and iOS,
+                which ship from the same code under the same identifier
+                (<code>solutions.littlebird.overshoot</code>). Everything below
+                applies to both unless it names a platform. It does not cover
+                GameAnalytics' own services, Google Play or the App Store, which
+                are governed by their own policies.
             </p>
 
             <h2>2. There is no Overshoot account and no Overshoot server</h2>
             <p>
                 Overshoot does not ask you to sign up, sign in, or create an
-                account, and it does not connect to any Google Play, Apple or
-                social account. We do not operate a backend. Nothing you do in
+                account, and it does not connect to Game Center, Google Play
+                Games, an Apple ID, a Google account or any social account. We
+                do not operate a backend. Nothing you do in
                 the game is uploaded to us or synced between your devices — if
                 you install Overshoot on two phones, they share nothing, and
                 your best score does not follow you.
@@ -90,8 +94,8 @@
                         <tr>
                             <td>Your settings</td>
                             <td>
-                                Whether sound effects, music and vibration are
-                                switched on.
+                                Whether sound effects, music and haptics
+                                (vibration) are switched on.
                             </td>
                         </tr>
                         <tr>
@@ -117,10 +121,35 @@
                 player and quietly falsify the only numbers we look at.
             </p>
             <p>
+                Sharing a run writes one more file: the picture of that run,
+                into a scratch folder inside the same private storage area,
+                which is emptied before every write so at most one such picture
+                is ever on disk. It contains the drawing and nothing else, and
+                it leaves your device only if you pick somewhere to send it in
+                your phone's share sheet. Where it goes then is between you and
+                the app you chose; it is never sent to us.
+            </p>
+            <p>
                 Uninstalling the game removes all of it, including the install
-                identifier. Overshoot switches off Android's automatic backup, so
-                none of this file is copied to your Google account or restored
-                onto a new phone.
+                identifier and any share picture.
+            </p>
+            <p>
+                <strong>On Android</strong>, Overshoot switches off the
+                platform's automatic backup, so none of this is copied to your
+                Google account or restored onto a new phone.
+            </p>
+            <p>
+                <strong>On iOS</strong>, the app's private storage is part of
+                your device's normal backup, so if you have iCloud Backup or an
+                encrypted local backup switched on, your best score, missions
+                and settings can be included in it and restored onto a new
+                device. That backup belongs to your Apple account and is handled
+                by Apple under
+                <a href="https://www.apple.com/legal/privacy/" rel="noopener"
+                    >their privacy policy</a
+                >; we have no access to it and no way to read anything in it.
+                The game is also excluded from the Files app and from iTunes
+                file sharing, so no other app can reach the file.
             </p>
 
             <h2>4. What is sent to GameAnalytics</h2>
@@ -138,17 +167,19 @@
                     <strong>A random install identifier</strong> — a version 4
                     UUID generated on your device the first time you open the
                     game. It is not derived from anything about you or your
-                    phone, it is not your Google Play account, and it is not the
-                    Android advertising ID. It identifies one installation of one
-                    game and nothing else.
+                    phone, it is not your Google or Apple account, and it is
+                    neither the Android advertising ID nor Apple's advertising
+                    identifier (IDFA) nor the identifier for vendors (IDFV). It
+                    identifies one installation of one game and nothing else.
                 </li>
                 <li>
                     A random session identifier, the number of sessions since
                     install, and the length of each session.
                 </li>
                 <li>
-                    Your device model, Android version, the game's version
-                    number, and the version of the game engine.
+                    Your device model, your Android or iOS version, which of the
+                    two platforms it is, the game's version number, and the
+                    version of the game engine.
                 </li>
                 <li>The time the event happened.</li>
             </ul>
@@ -209,8 +240,11 @@
                     purpose.
                 </li>
                 <li>
-                    No cross-app or cross-site tracking, and the Android
-                    advertising ID is never read.
+                    No cross-app or cross-site tracking. The Android advertising
+                    ID, Apple's IDFA and the identifier for vendors are never
+                    read, and the app is declared to Apple as not used for
+                    tracking — which is why it never shows you an App Tracking
+                    Transparency prompt.
                 </li>
                 <li>
                     No location tracking. Overshoot never requests location
@@ -218,8 +252,11 @@
                 </li>
                 <li>
                     No access to your microphone, camera, contacts, photos or
-                    files. The only permissions the app requests are internet
-                    access and vibration.
+                    files, and no permission prompt of any kind on either
+                    platform. On Android the only permissions the app declares
+                    are internet access and vibration; on iOS it asks for
+                    nothing, and the share sheet hands your picture to whichever
+                    app you choose without Overshoot ever seeing where it went.
                 </li>
             </ul>
 
@@ -227,7 +264,8 @@
             <p>
                 Data on your device is kept until you delete it, either through
                 <strong>Settings → Reset progress</strong> or by uninstalling the
-                game.
+                game. A copy inside an iOS device backup lasts as long as that
+                backup does, which is under your control rather than ours.
             </p>
             <p>
                 Analytics and error data are retained by GameAnalytics according
